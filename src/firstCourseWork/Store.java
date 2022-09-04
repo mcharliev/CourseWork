@@ -45,9 +45,9 @@ public class Store {
         employeeBook.showSalaryInfo(1750);
         System.out.println("______________________________________________________");
 
-        employeeBook.changeEmployeeSalary("Diego Lopes"); //меняем зарплату сотрудника, с помощью ввода в консоли
-        employeeBook.changeEmployeeDep("Diego Lopes"); //меняем отдел сотрудника, с помощью ввода в консоли
-        employeeBook.printDepartmentInfo(4); //Выводим имена сотрудников работающих в запрашиваемом отделе
+        employeeBook.changeEmployeeSalary("Diego Lopes");
+        employeeBook.changeEmployeeDep("Diego Lopes");
+        employeeBook.printDepartmentInfo(4);
     }
 }
 
