@@ -34,15 +34,17 @@ public class Employee {
         return salary;
     }
 
-    public static int getCount() {
-        return count;
-    }
-
     public int getId() {
         return id;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", department=" + department +
+                ", salary=" + salary +
+                ", id=" + id +
+                '}';
+    }
 }
