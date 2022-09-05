@@ -1,10 +1,7 @@
 package firstCourseWork;
 
-import java.io.IOException;
-import java.util.Arrays;
-
 public class Store {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         EmployeeBook employeeBook = new EmployeeBook();
         employeeBook.addEmployee(new Employee("Olivia Smith", 1, 1800));
         employeeBook.addEmployee(new Employee("Samuel Adams", 2, 1650));
@@ -17,7 +14,7 @@ public class Store {
         employeeBook.addEmployee(new Employee("James Smith", 5, 1950));
         employeeBook.addEmployee(new Employee("Daniel Brown", 3, 2150));
 
-        employeeBook.increaseSalary(1.15); // индексируем зарплату сотрудников
+        employeeBook.increaseSalary(1.15);
         System.out.println("Выводим всю информацию по сотрудниками всего магазина");
         System.out.println("______________________________________________________");
         employeeBook.printAllInfo();
@@ -37,7 +34,7 @@ public class Store {
 
         System.out.println("Выводим всю информацию по одному отделу магазина");
         System.out.println("______________________________________________________");
-        employeeBook.showDepartmentInfo(4);
+        employeeBook.showDepartmentInfo(1);
         System.out.println("______________________________________________________");
 
         System.out.println("Узнаем у кого из сотрудников зарплата больше или меньше исходной");
@@ -45,9 +42,10 @@ public class Store {
         employeeBook.showSalaryInfo(1750);
         System.out.println("______________________________________________________");
 
-        employeeBook.changeEmployeeSalary("Diego Lopes");
-        employeeBook.changeEmployeeDep("Diego Lopes");
-        employeeBook.printDepartmentInfo(4);
+        employeeBook.changeEmployeeSalary("Diego Lopes", 2500);
+        employeeBook.changeEmployeeDep("Diego Lopes", 1);
+        employeeBook.printDepartmentInfo(1);
+        employeeBook.increaseSalary(1.15);
     }
 }
 
