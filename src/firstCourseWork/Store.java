@@ -14,7 +14,7 @@ public class Store {
         employeeBook.addEmployee(new Employee("James Smith", 5, 1950));
         employeeBook.addEmployee(new Employee("Daniel Brown", 3, 2150));
 
-        employeeBook.increaseSalary(1.15);
+//        employeeBook.increaseSalary(1.15);
         System.out.println("Выводим всю информацию по сотрудниками всего магазина");
         System.out.println("______________________________________________________");
         employeeBook.printAllInfo();

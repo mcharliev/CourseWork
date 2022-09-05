@@ -144,7 +144,7 @@ class EmployeeBook {
                 System.out.println("Name: " + emp.getName() + " id: " + emp.getId() + " salary: " + emp.getSalary());
             }
         }
-        System.out.println("Сотрудники магазина зарплата у которых зарплата  больше и равно " + value);
+        System.out.println("Сотрудники магазина зарплата у которых зарплата  больше и равна " + value);
         for (Employee emp : employees) {
             if (emp.getSalary() >= value) {
                 System.out.println("Name: " + emp.getName() + " id: " + emp.getId() + " salary: " + emp.getSalary());
